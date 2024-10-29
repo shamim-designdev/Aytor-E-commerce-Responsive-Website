@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Aytor-Ecommerce-shop product</title>
+<link rel=stylesheet href=./css/bootstrap.min.css>
+<link rel=stylesheet href=./css/slick.css>
+<link rel=stylesheet href=./css/all.min.css>
+<link rel=stylesheet href=./css/venobox.min.css>
+<link rel=stylesheet href=./css/style.min.css>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg d-none d-lg-block">
+<div class=container>
+<a class=navbar-brand href=./index.html><img src=./img/Logo.png alt=logo></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=myNav>
+<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=./index.html>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Shop<span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=shop.html>Shop Items</a>
+<a href=shopdetails.html>Shop Details</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=./about.html>About</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Features <span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=#>Discount</a>
+<a href=#>Hot Sale</a>
+<a href=#>Winter Offer</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./blogs.html>Blogs</a>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./contact.html>Contact</a>
+</li>
+</ul>
+</div>
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class="m-0 searchIconDesktop"><img src="./img/Search Box.svg" alt=""></a>
+<a href=#><img src=./img/user.svg alt=""></a>
+<a href=#><img src=./img/heart.svg alt=""></a>
+<a href=# class=position-relative>
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="d-lg-none navbarSm">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-2 text-center">
+<a data-bs-toggle=offcanvas href=#offcanvas role=button aria-controls=offcanvas class=bar-color>
+<i class="fa-solid fa-bars-staggered"></i>
+</a>
+</div>
+<div class="col-8 text-center px-0 logo">
+<a href=#><img src=./img/Logo.png alt=""></a>
+</div>
+<div class="col-2 px-0">
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class=m-0><img src=./img/heart.svg alt=""></a>
+<a href=# class="position-relative m-0 me-1">
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="navbarBottom d-lg-none">
+<div class=container>
+<div class=row>
+<ul class="d-flex justify-content-between w-100">
+<li><a href=#><i class="fa-solid fa-tags"></i></a></li>
+<li><a href=#><i class="fa-solid fa-user"></i></a></li>
+</ul>
+<a href=# class=searchIcon id=searchIcon><i class="fa-solid fa-magnifying-glass"></i></a>
+</div>
+</div>
+</div>
+<div class="offcanvas offcanvas-start d-lg-none" tabindex=-1 id=offcanvas aria-labelledby=offcanvasLabel>
+<div class=offcanvas-header>
+<h5 class=offcanvas-title id=offcanvasLabel>
+<img src=./img/Logo.png alt=Logo class=img-fluid>
+</h5>
+<button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button>
+</div>
+<div class="offcanvas-body offcanvas-menu">
+<nav class=menu>
+<ul class=list-unstyled>
+<li><a href=./index.html>Home</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Shop<i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=shop.html>Shop Items</a></li>
+<li><a href=shopdetails.html>Shop Details</a></li>
+</ul>
+</li>
+<li><a href=about.html>About</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Features <i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=#>Discount</a></li>
+<li><a href=#>Hot Sale</a></li>
+<li><a href=#>Winter Offer</a></li>
+</ul>
+</li>
+<li><a href=blogs.html>Blogs</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<section id=gridBanner>
+<div class=heading>
+<h2>Shop - Products</h2>
+<p>Home / Shop</p>
+</div>
+</section>
+<section id=gridShop>
+<div class=container>
+<div class=row>
+<ul class="nav nav-pills p-0" id=pills-tab role=tablist>
+<li class="nav-item d-flex col-lg-1" role=presentation>
+<button class="nav-link active list" id=pills-home-tab data-bs-toggle=pill data-bs-target=#pills-home type=button role=tab aria-controls=pills-home aria-selected=true>
+<img src=./img/mi_filter.png alt="">
+</button>
+<button class="nav-link grid" id=pills-profile-tab data-bs-toggle=pill data-bs-target=#pills-profile type=button role=tab aria-controls=pills-profile aria-selected=false>
+<img src=./img/Vector.png alt="">
+</button>
+</li>
+<li class="nav-item col-lg-8 prog-text d-none d-lg-block" role=presentation>
+<p class=shopProg>Showing 12 of 16 Post</p>
+<div class=progress role=progressbar aria-label="Example 1px high" aria-valuenow=75 aria-valuemin=0 aria-valuemax=100>
+<div class=progress-bar style=width:75%></div>
+</div>
+</li>
+<li class="nav-item col-lg-3 d-none d-lg-block" role=presentation>
+<div class=sorting>
+<select id=disabledSelect class=form-select>
+<option>Default Sorting</option>
+</select>
+</div>
+</li>
+</ul>
+<div class=tab-content id=pills-tabContent>
+<div class="tab-pane fade show active" id=pills-home role=tabpanel aria-labelledby=pills-home-tab tabindex=0>
+<div class=row>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket.webp alt="">
+</a>
+<div class=labels>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Classic Denim Jacket
+</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$129.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket3.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Vintage Leather Jacket</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$199.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket4.webp alt="">
+</a>
+<div class=labels>
+Hot Sale
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Lightweight Jacket</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$119.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket2.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Sherpa Lined Jacket</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$159.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/tshirt.webp alt="">
+</a>
+<div class=labels>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Sport Performance Polo</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$59.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/tshirt2.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Cotton Polo Shirt</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$39.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/tshirt3.webp alt="">
+</a>
+<div class=labels>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Slim Fit Polo
+</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$54.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/tshirt4.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Casual Polo Shirt</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$44.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/tshirt5.webp alt="">
+</a>
+<div class=labels>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Sport Performance Polo</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$59.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Hooded Utility Jacket
+</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$139.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket2.webp alt="">
+</a>
+<div class=labels>
+Hot Sale
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Retro Varsity Jacket</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$179.99</p>
+</div>
+</div>
+</div>
+<div class="gridProduct col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/jacket3.webp alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=gridText>
+<div class=row>
+<ul class="d-flex justify-content-between">
+<li class=details>
+<h6>Urban Bomber Jacket
+</h6>
+</li>
+<li class=icon>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</li>
+</ul>
+<p>$149.99</p>
+</div>
+</div>
+</div>
+<div class=container>
+<div class=row>
+<div class="view text-center">
+<a href=# class=prev-btn><i class="fa-solid fa-arrow-left-long"></i>Prev</a>
+<a href=# class=num>1</a>
+<a href=# class=num>2</a>
+<a href=# class=next-btn>Next<i class="fa-solid fa-arrow-right-long"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id=pills-profile role=tabpanel aria-labelledby=pills-profile-tab tabindex=0>
+<div class=listProduct>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Classic Denim Jacket</h3>
+<h5>A timeless denim jacket with durable fabric and versatile style, suitable for year-round casual wear.</h5>
+<h6>$129.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket2.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Vintage Leather Jacket</h3>
+<h5>High-quality leather jacket with a vintage finish, adding a touch of elegance to both casual and formal outfits.</h5>
+<h6>$199.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket3.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Lightweight Jacket</h3>
+<h5>Designed for easy layering, this lightweight jacket offers comfort and functionality for mild weather.</h5>
+<h6>$119.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket4.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Sherpa Lined Jacket</h3>
+<h5>A warm, cozy jacket with a soft sherpa lining, ideal for chilly weather and outdoor activities.</h5>
+<h6>$159.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/tshirt.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Sport Performance Polo</h3>
+<h5>Performance-focused polo with moisture-wicking fabric, suitable for active days or sports activities.</h5>
+<h6>$59.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/tshirt2.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Cotton Polo Shirt</h3>
+<h5>Basic yet comfortable polo made from soft cotton, perfect for casual, everyday wear.</h5>
+<h6>$39.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/tshirt3.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Slim Fit Polo</h3>
+<h5>A modern, slim-cut polo that offers a fitted look, ideal for both smart casual and leisure settings.</h5>
+<h6>$54.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/tshirt4.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Casual Polo Shirt</h3>
+<h5>Simple and breathable polo shirt, suitable for relaxed, casual days and summer wear.</h5>
+<h6>$44.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/tshirt5.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Sport Performance Polo</h3>
+<h5>Athletic polo designed for movement, with breathable fabric to keep you cool during workouts or games.</h5>
+<h6>$59.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Hooded Utility Jacket</h3>
+<h5>Rugged hooded jacket with multiple pockets, combining functionality with an urban style, perfect for outdoor use.</h5>
+<h6>$139.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket2.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Retro Varsity Jacket</h3>
+<h5>Classic varsity-style jacket with a retro appeal, suitable for a sporty, nostalgic look.</h5>
+<h6>$179.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-3 col-md-6">
+<div class=listImage>
+<img src=./img/jacket4.webp alt="">
+</div>
+</div>
+<div class=col-lg-9>
+<div class=listText>
+<h3>Urban Bomber Jacket</h3>
+<h5>Stylish bomber jacket with a modern design, ideal for city wear and street style.</h5>
+<h6>$149.99</h6>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<div class=icon>
+<ul class=d-flex>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+</main>
+<div class=subscription-section-bg>
+<div class="container my-5 p-4 rounded">
+<div class="row align-items-center">
+<div class=col-md-6>
+<h2 class=fw-bold>Subscribe to Our Newsletter!</h2>
+<p class=text-muted>Authoritatively morph 24/7 potentialities with error-free partnerships.<br>Objectively engineer multimedia.</p>
+</div>
+<div class=col-md-6>
+<form class="subscription-form d-flex">
+<input type=email class="form-control me-2" placeholder="Enter your email..." required>
+<button type=submit class="btn btn-primary">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-light pt-5 border-top">
+<div class=container>
+<div class=row>
+<div class="col-md-3 mb-4">
+<img src=./img/Logo.png alt="Aytor Logo" class="footer-logo mb-3 img-fluid">
+<p class=text-muted>Progressively optimize effective ideas before turnkey process improvements.<br>Proactively disseminate.</p>
+<div class="social-icons d-flex">
+<a href=# class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+<a href=# class=text-dark><i class="fab fa-pinterest-p"></i></a>
+</div>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">My Account</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>My Account</a></li>
+<li><a href=# class=text-muted>View Cart</a></li>
+<li><a href=# class=text-muted>Wishlist</a></li>
+<li><a href=# class=text-muted>Compare</a></li>
+<li><a href=# class=text-muted>New Products</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Support</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Help</a></li>
+<li><a href=# class=text-muted>Contact Us</a></li>
+<li><a href=# class=text-muted>Feedback</a></li>
+<li><a href=# class=text-muted>Customer Service</a></li>
+<li><a href=# class=text-muted>Store Locations</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Shop</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Men's Shopping</a></li>
+<li><a href=# class=text-muted>Women's Shopping</a></li>
+<li><a href=# class=text-muted>Kids' Shopping</a></li>
+<li><a href=# class=text-muted>Discounts</a></li>
+<li><a href=# class=text-muted>New Arrivals</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+<h4 class="h5 fw-bold">Contact Us</h4>
+<p class="text-muted mb-1"><i class="fas fa-map-marker-alt me-2"></i> 2715 S Parker Rd, Aurora, CO 80014, United States</p>
+<p class="text-muted mb-1"><i class="fas fa-phone me-2"></i> +1 800 866 2268</p>
+<p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> sectorinfo@gmail.com</p>
+<p class=text-muted><i class="fas fa-envelope me-2"></i> info@aytor.com</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="footer-bottom bg-light py-3 border-top">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<p class="mb-2 mb-md-0 text-muted text-center text-md-start">
+© 2024 All Rights Reserved <span class="highlight fw-bold">Aytor</span> By <span class="highlight fw-bold">Mh Shamim Bhuiyan</span>.
+</p>
+<div class="d-flex justify-content-center justify-content-md-end">
+<img src="./img/25654-2-major-credit-card-logo-transparent-thumb 1.png" alt="Accepted Payment Methods" class="payment-logo img-fluid">
+</div>
+</div>
+</div>
+<script src=./js/jquery-3.7.1.min.js></script>
+<script src=./js/bootstrap.bundle.min.js></script>
+<script src=./js/jquery.countdown.min.js></script>
+<script src=./js/slick.min.js></script>
+<script src=./js/venobox.min.js></script>
+<script src=./js/app.min.js></script>
+</body>
+</html>

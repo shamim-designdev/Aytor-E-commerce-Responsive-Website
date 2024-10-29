@@ -1,0 +1,966 @@
+
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Aytor-Ecommerce-Best Shop for Quality Products</title>
+<meta name=description content="Aytor-Ecommerce offers a wide range of quality products at competitive prices. Shop now for the best deals on fashion, home goods, beauty products, and more!">
+<meta name=keywords content="ecommerce, online shopping, fashion, home goods, beauty products, discounts, best deals">
+<link rel=stylesheet href=./css/bootstrap.min.css>
+<link rel=stylesheet href=./css/slick.css>
+<link rel=stylesheet href=./css/all.min.css>
+<link rel=stylesheet href=./css/venobox.min.css>
+<link rel=stylesheet href=./css/style.min.css>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg d-none d-lg-block">
+<div class=container>
+<a class=navbar-brand href=./index.html><img src=./img/Logo.png alt=logo></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=myNav>
+<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=./index.html>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Shop<span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=shop.html>Shop Items</a>
+<a href=shopdetails.html>Shop Details</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=./about.html>About</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Features <span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=#>Discount</a>
+<a href=#>Hot Sale</a>
+<a href=#>Winter Offer</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./blogs.html>Blogs</a>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./contact.html>Contact</a>
+</li>
+</ul>
+</div>
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class="m-0 searchIconDesktop"><img src="./img/Search Box.svg" alt=""></a>
+<a href=#><img src=./img/user.svg alt=""></a>
+<a href=#><img src=./img/heart.svg alt=""></a>
+<a href=# class=position-relative>
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="d-lg-none navbarSm">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-2 text-center">
+<a data-bs-toggle=offcanvas href=#offcanvas role=button aria-controls=offcanvas class=bar-color>
+<i class="fa-solid fa-bars-staggered"></i>
+</a>
+</div>
+<div class="col-8 text-center px-0 logo">
+<a href=#><img src=./img/Logo.png alt=""></a>
+</div>
+<div class="col-2 px-0">
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class=m-0><img src=./img/heart.svg alt=""></a>
+<a href=# class="position-relative m-0 me-1">
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="navbarBottom d-lg-none">
+<div class=container>
+<div class=row>
+<ul class="d-flex justify-content-between w-100">
+<li><a href=#><i class="fa-solid fa-tags"></i></a></li>
+<li><a href=#><i class="fa-solid fa-user"></i></a></li>
+</ul>
+<a href=# class=searchIcon id=searchIcon><i class="fa-solid fa-magnifying-glass"></i></a>
+</div>
+</div>
+</div>
+<div class="offcanvas offcanvas-start d-lg-none" tabindex=-1 id=offcanvas aria-labelledby=offcanvasLabel>
+<div class=offcanvas-header>
+<h5 class=offcanvas-title id=offcanvasLabel>
+<img src=./img/Logo.png alt=Logo class=img-fluid>
+</h5>
+<button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button>
+</div>
+<div class="offcanvas-body offcanvas-menu">
+<nav class=menu>
+<ul class=list-unstyled>
+<li><a href=./index.html>Home</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Shop<i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=shop.html>Shop Items</a></li>
+<li><a href=shopdetails.html>Shop Details</a></li>
+</ul>
+</li>
+<li><a href=about.html>About</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Features <i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=#>Discount</a></li>
+<li><a href=#>Hot Sale</a></li>
+<li><a href=#>Winter Offer</a></li>
+</ul>
+</li>
+<li><a href=blogs.html>Blogs</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<section class=banner>
+<div class=banner-item style=background-image:url(./img/HeroImage.webp)>
+<div class=banner-content>
+<h6>Mega Sale</h6>
+<h2>Up To 35% Off</h2>
+<p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+<a href=# class=btn>
+Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+</a>
+</div>
+</div>
+<div class=banner-item style=background-image:url(./img/2149480130.jpg)>
+<div class=banner-content>
+<h6>Mega Sale</h6>
+<h2>Up To 35% Off</h2>
+<p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+<a href=# class=btn>
+Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+</a>
+</div>
+</div>
+<div class=banner-item style=background-image:url(./img/2149480138.jpg)>
+<div class=banner-content>
+<h6>Mega Sale</h6>
+<h2>Up To 35% Off</h2>
+<p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+<a href=# class=btn>
+Shop Now <span><i class="fa-solid fa-arrow-right"></i></span>
+</a>
+</div>
+</div>
+<div class=banner-dots>
+<div class="dot active" data-slide=0></div>
+<div class=dot data-slide=1></div>
+<div class=dot data-slide=2></div>
+</div>
+</section>
+<section id=product-showcase>
+<div class=container>
+<div class=row>
+<div class="col-lg-5 col-md-6 d-flex flex-column justify-content-between">
+<div class="cream_card position-relative">
+<img src=./img/product1.webp alt="Beauty Cream" class=img-fluid>
+<div class=overlay>
+<h3>Beauty Cream</h3>
+<a href=#>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="cream_card position-relative">
+<img src=./img/product2.webp alt="Facial Spray" class=img-fluid>
+<div class=overlay>
+<h3>Facial Spray</h3>
+<a href=#>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+</div>
+<div class="col-lg-7 col-md-6">
+<div class="cream_card position-relative">
+<img src=./img/product3.webp alt="Facial Bar Soap" class=img-fluid>
+<div class=overlay>
+<h3>Facial Bar Soap</h3>
+<a href=#>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=newArrival>
+<div class="container position-relative">
+<h2>New Arrivals Products</h2>
+<div class=productSlide>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img1.webp" alt="">
+</a>
+<div class=label>
+-45%
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$135.85</p>
+<a href=#>
+<h4>Lotion Shower gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img2.webp" alt="">
+</a>
+<div class=label>
+Sale
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$120.35</p>
+<a href=#>
+<h4>Makeup Set</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img3.webp" alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$90.65</p>
+<a href=#>
+<h4>Argan Cream Body Butter</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img4.webp" alt="">
+</a>
+<div class=label>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$180.40</p>
+<a href=#>
+<h4>Manicure Gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img1.webp" alt="">
+</a>
+<div class=label>
+-50%
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$120.75</p>
+<a href=#>
+<h4>Note Facewash</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img2.webp" alt="">
+</a>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$130.55</p>
+<a href=#>
+<h4>Lotion Shower gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img3.webp" alt="">
+</a>
+<div class=label>
+New
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$165.65</p>
+<a href=#>
+<h4>Foaming Cleanser</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class=product>
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img4.webp" alt="">
+</a>
+<div class=label>
+Sale
+</div>
+<div class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=productContent>
+<p>$100.65</p>
+<a href=#>
+<h4>Manicure Gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+<div id=productLeft class=leftArrows>
+<i class="fa-solid fa-chevron-left"></i>
+</div>
+<div id=productRight class=rightArrows>
+<i class="fa-solid fa-angle-right"></i>
+</div>
+</div>
+</section>
+<section class=Spabanner>
+<div class=container>
+<div class=row>
+<div class="content col-lg-4">
+<h2>Get Up To 35% Off all <br>
+Best Spa Cosmetics <br>
+Cream</h2>
+<p>Holistically maximize interoperable action items for effective e-business. Globally impact enterprise-wide niche markets through dynamic.</p>
+<a href=#>Shop Now<i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+<section class=BestSellerProduct>
+<div class=container>
+<h2>Best Seller Products</h2>
+<div class="row justify-content-between">
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img1.webp" alt="">
+</a>
+<div class=label>-45%</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$150.65</p>
+<a href=#>
+<h4>Lotion Shower gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img2.webp" alt="">
+</a>
+<div class=label>Sale</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$190.65</p>
+<a href=#>
+<h4>Argan Cream Body</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img3.webp" alt="">
+</a>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$150.65</p>
+<a href=#>
+<h4>Lotion Shower gel</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img4.webp" alt="">
+</a>
+<div class=label>New</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$110.65</p>
+<a href=#>
+<h4>Compact Face Powder</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src=./img/9226712_4123153.webp alt="">
+</a>
+<div class=label>Sale</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$80.65</p>
+<a href=#>
+<h4>Manicure Gel nails</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img4.webp" alt="">
+</a>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$350.65</p>
+<a href=#>
+<h4>Perfumes s, Orlane Paris</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img3.webp" alt="">
+</a>
+<div class=label>New</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$450.65</p>
+<a href=#>
+<h4>Natural skin care Cleanser</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+<div class="SellerSlide col-lg-3 col-md-6">
+<div class=productImage>
+<a href=#>
+<img src="./img/slider img4.webp" alt="">
+</a>
+<div class=label>New</div>
+<div style=padding-top:20px class=overlay>
+<ul>
+<li><a href=#><i class="fa-solid fa-cart-plus"></i></a></li>
+<li><a href=#><i class="fa-solid fa-heart"></i></a></li>
+<li><a href=#><i class="fa-solid fa-eye"></i></a></li>
+<li><a href=#><i class="fa-solid fa-star"></i></a></li>
+</ul>
+</div>
+</div>
+<div class=ProductContent>
+<p>$350.65</p>
+<a href=#>
+<h4>Argan oil Hair conditioner</h4>
+</a>
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+<div class=btn-container>
+<a href=# class=see-all-products>See All Products
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</section>
+<section id=dealSlider>
+<div class=container>
+<h2>Deals Of The Days</h2>
+<div class=wrapper>
+<div class=countdown>
+<ul>
+<li><span class=day>27</span>Days</li>
+<li><span class=hour>16</span>Hour</li>
+<li><span class=min>13</span>Minute</li>
+<li><span class=sec>30</span>Sec</li>
+</ul>
+</div>
+<div class=deal_slider>
+<div class="col-lg-6 wrapper_container">
+<div class=wrapper_card style=background-image:url(./img/deals1.png)>
+<h3>Fairness Cream</h3>
+<h1>Get Up To 35% Off</h1>
+<p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+<h3>$256.35<span>$356.35</span></h3>
+<a href=# class=button>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="col-lg-6 wrapper_container">
+<div class=wrapper_card style=background-image:url(./img/deals2.png)>
+<h3>Body Lotions</h3>
+<h1>Get Up To 35% Off</h1>
+<p>Credibly empower visionary leadership skills and 24/7 functionalities. Uniquely whiteboard equity invested.</p>
+<h3>$256.35 <span>$$356.35</span></h3>
+<a href=# class=button>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="col-lg-6 wrapper_container">
+<div class=wrapper_card style=background-image:url(./img/deals1.png)>
+<h3>Fairness Cream</h3>
+<h1>Get Up To 35% Off</h1>
+<p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+<h3>$256.35<span>$356.35</span></h3>
+<a href=# class=button>Shop Now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=offer>
+<div class=container-fluid>
+<div class=row>
+<div class="col-lg-5 col-md-12 order-lg-1 order-md-1 order-1 text-start">
+<div class=content>
+<span>SPECIAL OFFER</span>
+<h3>Beauty Inspired by Real <br> Shine In Life</h3>
+<p>Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.</p>
+<a href=#>Explore More<i class="fa-solid fa-arrow-right-long"></i></a>
+</div>
+</div>
+<div class="col-lg-7 col-md-12 order-lg-2 order-md-2 order-2 p-0">
+<div class=video>
+<div class=overlay>
+<a href="https://www.youtube.com/watch?v=gBU6Q1XFcMw" target=_blank rel="noopener noreferrer">
+<i class="fa-solid fa-play"></i>
+</a>
+</div>
+<img class="w-100 h-100 d-block" src=./img/thumbnail.webp alt="Special Offer Video">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=news>
+<div class=container>
+<div class=heading>
+<h3>Latest News</h3>
+</div>
+<div class=newsSlider>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src="./img/slider img1.webp" alt="">
+</div>
+<div class=newsInfo>
+<h3>Best multi-step Beauty skin.</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src="./img/slider img2.webp" alt="">
+</div>
+<div class=newsInfo>
+<h3>Herbal treatment for dry scal.</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src="./img/slider img3.webp" alt="">
+</div>
+<div class=newsInfo>
+<h3>Traveling Solo Is Awesome</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src="./img/slider img4.webp" alt="">
+</div>
+<div class=newsInfo>
+<h3>A Beautiful Sunday Morning</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src=./img/9226712_4123153.webp alt="">
+</div>
+<div class=newsInfo>
+<h3>Best multi-step Beauty skin.</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-2 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+<div class="col-lg-3 newsBox">
+<div class=picture>
+<img src="./img/slider img1.webp" alt="">
+</div>
+<div class=newsInfo>
+<h3>Traveling Solo Is Awesome</h3>
+<p>Appropriately seize 24/365 markets without adaptive.</p>
+</div>
+<div class=readMore>
+<a class="d-flex align-items-center link" href=#>Read More <i class="ps-3 fa-solid fa-long-arrow-right"></i></a>
+<a class=date href=#>Jan 04, 2022</a>
+</div>
+</div>
+</div>
+<div class=news_slider_dots_container></div>
+</div>
+</section>
+</main>
+<div class=subscription-section-bg>
+<div class="container my-5 p-4 rounded">
+<div class="row align-items-center">
+<div class=col-md-6>
+<h2 class=fw-bold>Subscribe to Our Newsletter!</h2>
+<p class=text-muted>Authoritatively morph 24/7 potentialities with error-free partnerships.<br>Objectively engineer multimedia.</p>
+</div>
+<div class=col-md-6>
+<form class="subscription-form d-flex">
+<input type=email class="form-control me-2" placeholder="Enter your email..." required>
+<button type=submit class="btn btn-primary">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-light pt-5 border-top">
+<div class=container>
+<div class=row>
+<div class="col-md-3 mb-4">
+<img src=./img/Logo.png alt="Aytor Logo" class="footer-logo mb-3 img-fluid">
+<p class=text-muted>Progressively optimize effective ideas before turnkey process improvements.<br>Proactively disseminate.</p>
+<div class="social-icons d-flex">
+<a href=# class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+<a href=# class=text-dark><i class="fab fa-pinterest-p"></i></a>
+</div>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">My Account</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>My Account</a></li>
+<li><a href=# class=text-muted>View Cart</a></li>
+<li><a href=# class=text-muted>Wishlist</a></li>
+<li><a href=# class=text-muted>Compare</a></li>
+<li><a href=# class=text-muted>New Products</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Support</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Help</a></li>
+<li><a href=# class=text-muted>Contact Us</a></li>
+<li><a href=# class=text-muted>Feedback</a></li>
+<li><a href=# class=text-muted>Customer Service</a></li>
+<li><a href=# class=text-muted>Store Locations</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Shop</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Men's Shopping</a></li>
+<li><a href=# class=text-muted>Women's Shopping</a></li>
+<li><a href=# class=text-muted>Kids' Shopping</a></li>
+<li><a href=# class=text-muted>Discounts</a></li>
+<li><a href=# class=text-muted>New Arrivals</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+<h4 class="h5 fw-bold">Contact Us</h4>
+<p class="text-muted mb-1"><i class="fas fa-map-marker-alt me-2"></i> 2715 S Parker Rd, Aurora, CO 80014, United States</p>
+<p class="text-muted mb-1"><i class="fas fa-phone me-2"></i> +1 800 866 2268</p>
+<p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> sectorinfo@gmail.com</p>
+<p class=text-muted><i class="fas fa-envelope me-2"></i> info@aytor.com</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="footer-bottom bg-light py-3 border-top">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<p class="mb-2 mb-md-0 text-muted text-center text-md-start">
+© 2024 All Rights Reserved <span class="highlight fw-bold">Aytor</span> By <span class="highlight fw-bold">Mh Shamim Bhuiyan</span>.
+</p>
+<div class="d-flex justify-content-center justify-content-md-end">
+<img src="./img/25654-2-major-credit-card-logo-transparent-thumb 1.png" alt="Accepted Payment Methods" class="payment-logo img-fluid">
+</div>
+</div>
+</div>
+<script src=./js/jquery-3.7.1.min.js></script>
+<script src=./js/bootstrap.bundle.min.js></script>
+<script src=./js/jquery.countdown.min.js></script>
+<script src=./js/slick.min.js></script>
+<script src=./js/venobox.min.js></script>
+<script src=./js/app.min.js></script>
+</body>
+</html>

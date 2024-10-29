@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Aytor-Ecommerce-shop product details</title>
+<link rel=stylesheet href=./css/bootstrap.min.css>
+<link rel=stylesheet href=./css/slick.css>
+<link rel=stylesheet href=./css/all.min.css>
+<link rel=stylesheet href=./css/venobox.min.css>
+<link rel=stylesheet href=./css/style.min.css>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg d-none d-lg-block">
+<div class=container>
+<a class=navbar-brand href=./index.html><img src=./img/Logo.png alt=logo></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=myNav>
+<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=./index.html>Home</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Shop<span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=shop.html>Shop Items</a>
+<a href=shopdetails.html>Shop Details</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=./about.html>About</a>
+</li>
+<li class="nav-item dropdown">
+<a class=nav-link aria-current=page href=#>Features <span>
+<i class="fa-solid fa-chevron-up"></i></span></a>
+<div class=dropdown-content>
+<a href=#>Discount</a>
+<a href=#>Hot Sale</a>
+<a href=#>Winter Offer</a>
+</div>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./blogs.html>Blogs</a>
+</li>
+<li class=nav-item>
+<a class=nav-link aria-current=page href=./contact.html>Contact</a>
+</li>
+</ul>
+</div>
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class="m-0 searchIconDesktop"><img src="./img/Search Box.svg" alt=""></a>
+<a href=#><img src=./img/user.svg alt=""></a>
+<a href=#><img src=./img/heart.svg alt=""></a>
+<a href=# class=position-relative>
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="d-lg-none navbarSm">
+<div class=container>
+<div class="row align-items-center">
+<div class="col-2 text-center">
+<a data-bs-toggle=offcanvas href=#offcanvas role=button aria-controls=offcanvas class=bar-color>
+<i class="fa-solid fa-bars-staggered"></i>
+</a>
+</div>
+<div class="col-8 text-center px-0 logo">
+<a href=#><img src=./img/Logo.png alt=""></a>
+</div>
+<div class="col-2 px-0">
+<div class=links>
+<ul class="d-flex align-items-center">
+<li>
+<a href=# class=m-0><img src=./img/heart.svg alt=""></a>
+<a href=# class="position-relative m-0 me-1">
+<img src=./img/shopping-bag.svg alt="">
+<span class=cartCount>0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<div class="navbarBottom d-lg-none">
+<div class=container>
+<div class=row>
+<ul class="d-flex justify-content-between w-100">
+<li><a href=#><i class="fa-solid fa-tags"></i></a></li>
+<li><a href=#><i class="fa-solid fa-user"></i></a></li>
+</ul>
+<a href=# class=searchIcon id=searchIcon><i class="fa-solid fa-magnifying-glass"></i></a>
+</div>
+</div>
+</div>
+<div class="offcanvas offcanvas-start d-lg-none" tabindex=-1 id=offcanvas aria-labelledby=offcanvasLabel>
+<div class=offcanvas-header>
+<h5 class=offcanvas-title id=offcanvasLabel>
+<img src=./img/Logo.png alt=Logo class=img-fluid>
+</h5>
+<button type=button class=btn-close data-bs-dismiss=offcanvas aria-label=Close></button>
+</div>
+<div class="offcanvas-body offcanvas-menu">
+<nav class=menu>
+<ul class=list-unstyled>
+<li><a href=./index.html>Home</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Shop<i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=shop.html>Shop Items</a></li>
+<li><a href=shopdetails.html>Shop Details</a></li>
+</ul>
+</li>
+<li><a href=about.html>About</a></li>
+<li>
+<a href=# class="d-flex justify-content-between align-items-center">Features <i class="fa-solid fa-chevron-right"></i></a>
+<ul class="sidebar list-unstyled ms-3">
+<li><a href=#>Discount</a></li>
+<li><a href=#>Hot Sale</a></li>
+<li><a href=#>Winter Offer</a></li>
+</ul>
+</li>
+<li><a href=blogs.html>Blogs</a></li>
+<li><a href=contact.html>Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<section id=shopdetailsBanner>
+<div class=heading>
+<h2>Shop - Details</h2>
+<p>Home / Shop</p>
+</div>
+</section>
+<section id=productDetail>
+<div class=container>
+<div class=row>
+<div class="col-lg-6 mt-2">
+<div class="imageSliderTop col-12 mt-2">
+<div class=sliderMain>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide.webp alt="">
+</div>
+</div>
+</div>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide2.webp alt="">
+</div>
+</div>
+</div>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide3.webp alt="">
+</div>
+</div>
+</div>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide4.webp alt="">
+</div>
+</div>
+</div>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide.webp alt="">
+</div>
+</div>
+</div>
+<div class=sliderSlide>
+<div class=productCardLarge>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide2.webp alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="imageSliderBottom col-12 mt-2">
+<div class=sliderThumbnails>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide.webp alt="">
+</div>
+</div>
+</div>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide2.webp alt="">
+</div>
+</div>
+</div>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide3.webp alt="">
+</div>
+</div>
+</div>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide4.webp alt="">
+</div>
+</div>
+</div>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide.webp alt="">
+</div>
+</div>
+</div>
+<div class=thumbnailSlide>
+<div class=productCardSmall>
+<div class=productImage>
+<img class="img-fluid w-100" src=./img/tshirtslide2.webp alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 mt-2">
+<div class=productInfoSection>
+<h2>Premium Tshirt</h2>
+<div class=ratingSection>
+<div class=averageRating>5.00</div>
+<div class=starRating>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<a href=#>(5 Customer Reviews)</a>
+</div>
+<p class=price>$125.65 <del>$150.65</del></p>
+<p class=productDescription>The Premium t-shirt is made with Double PK fabric which features premium 80% combed compact organic cotton. The t-shirt has a soft touch which makes it very comfortable for day-long usage. </p>
+<hr>
+<div class=productAttributes>
+<div class=attribute>
+<label for=sizeSelect>Size:</label>
+<select id=sizeSelect class=form-select name=attribute_size data-attribute_name=attribute_size>
+<option value=S>S</option>
+<option value=M>M</option>
+<option value=L>L</option>
+<option value=XL>XL</option>
+<option value=2XL>2XL</option>
+<option value=3XL>3XL</option>
+<option value=4XL>4XL</option>
+</select>
+</div>
+<div class=attribute>
+<label for=colorSelect>Color:</label>
+<select id=colorSelect class=form-select name=attribute_color data-attribute_name=attribute_color>
+<option value=White>White</option>
+<option value=navy>Navy</option>
+<option value=blue>Blue</option>
+<option value=purple>Purple</option>
+<option value=brown>Brown</option>
+<option value=ash>Ash</option>
+</select>
+</div>
+</div>
+<div class=actionButtons>
+<div class=quantitySelector>
+<label class=screen-reader-text for=quantityInput>Quantity:</label>
+<button type=button class="quantityMinus btn"><i class="fa-solid fa-minus"></i></button>
+<input id=quantityInput class="quantityValue form-control d-inline-block" value=1 readonly>
+<button type=button class="quantityPlus btn"><i class="fa-solid fa-plus"></i></button>
+</div>
+<a href=# class=addToCartButton>
+<span class=buttonText><i class="fa-solid fa-cart-plus"></i> Add To Cart</span>
+</a>
+<a href=# class="iconButton d-none d-sm-block d-lg-block"><i class="fa-solid fa-heart"></i></a>
+<a href=# class="iconButton d-none d-sm-block d-lg-block"><i class="fa-solid fa-eye"></i></a>
+</div>
+<hr>
+<div class=productMeta>
+<div class=row>
+<div class=col-lg-8>
+<div class=metaDetails>
+<span>PLT: <a href=#>M0243</a></span>
+<span>Tags: <a href=#>Hot,</a> <a href=#>Men</a></span>
+<span>Category: <a href=#>Dress,</a> <a href=#>T-Shirt,</a> <a href=#>Polo Tshirt</a></span>
+</div>
+</div>
+<div class="col-lg-4 d-flex justify-content-end">
+<div class=socialMediaLinks>
+<div class="socialIcons d-md-none d-none d-lg-block">
+<span><a target=_blank href=https://www.facebook.com/ ><i class="fa-brands fa-facebook-f"></i></a></span>
+<span><a target=_blank href=https://x.com/ ><i class="fa-brands fa-twitter"></i></a></span>
+<span><a target=_blank href=https://www.instagram.com/ ><i class="fa-brands fa-instagram"></i></a></span>
+<span><a target=_blank href=https://www.pinterest.com/ ><i class="fa-brands fa-pinterest-p"></i></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section class=ProductmoreDetails>
+<div class=container>
+<div class="d-none d-lg-block">
+<ul class="nav nav-tabs nav-tabs-custom" id=detailsTab role=tablist>
+<li class=nav-item role=presentation>
+<button class="nav-link active" id=desc-tab data-bs-toggle=tab data-bs-target=#description type=button role=tab aria-controls=description aria-selected=true>
+Product Description
+</button>
+</li>
+<li class=nav-item role=presentation>
+<button class=nav-link id=reviews-tab data-bs-toggle=tab data-bs-target=#reviews type=button role=tab aria-controls=reviews aria-selected=false>
+Customer Reviews (5)
+</button>
+</li>
+<li class=nav-item role=presentation>
+<button class=nav-link id=info-tab data-bs-toggle=tab data-bs-target=#additional-info type=button role=tab aria-controls=additional-info aria-selected=false>
+Additional Information
+</button>
+</li>
+</ul>
+<div class=tab-content id=detailsTabContent>
+<div class="tab-pane fade show active" id=description role=tabpanel aria-labelledby=desc-tab>
+<div class=DescriptionContent>
+<p>
+Experience all-day comfort with our Premium t-shirt, crafted from luxurious Double PK fabric. This tee combines quality and sustainability with 80% combed, compact organic cotton, offering a softness that feels gentle against your skin. Whether you're heading out for a casual day or dressing up for a more refined look, this Polo t-shirt delivers a blend of sophistication and comfort.
+<br> <br>
+The compact cotton ensures lasting durability and minimal pilling, so it retains its shape and feel wash after wash. The breathable, moisture-wicking fabric allows you to stay cool and comfortable, even on the warmest days. Its tailored fit and timeless design make it versatile, suitable for work, casual outings, or weekend wear. Add this eco-conscious, high-quality staple to your wardrobe and enjoy a touch of premium comfort and style every day.
+</p>
+</div>
+</div>
+<div class="tab-pane fade" id=reviews role=tabpanel aria-labelledby=reviews-tab>
+<div class=ReviewsContainer>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile3.webp alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h4>Ayaan Malik<span>12 August, 2024</span></h4>
+<p> Super comfortable and feels luxurious! Wore it all day, and it stayed soft and breathable. Great for everyday wear! </p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile2.png alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-alt"></i>
+</div>
+<h4>Sara Rahman<span>5 September, 2024</span></h4>
+<p> This is my new go-to t-shirt. The fabric feels amazing, and I love that it’s organic cotton. Perfect for casual days! </p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile1.avif alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<h4>Rizwan Ahmed<span>21 September, 2024</span></h4>
+<p> The quality is top-notch! The shirt holds its shape well, even after multiple washes. It’s a great investment. </p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile2.png alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h4>Nisha Patel<span>8 October, 2024</span></h4>
+<p> Super soft and fits perfectly! I love the eco-friendly material, but I wish there were more color options. </p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/insta.jpg alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<h4>Arjun Kapoor<span>19 October, 2024</span></h4>
+<p> Love this t-shirt! It’s stylish and comfortable for long days. Great quality, and worth every penny. </p>
+</div>
+</div>
+<div class=container>
+<div class=row>
+<div class="view text-center">
+<a href=# class=prev-btn><i class="fa-solid fa-arrow-left-long"></i>Prev</a>
+<a href=# class=num>1</a>
+<a href=# class=num>2</a>
+<a href=# class=next-btn>Next<i class="fa-solid fa-arrow-right-long"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id=additional-info role=tabpanel aria-labelledby=info-tab>
+<div class=AdditionalInfoCards>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-paint-brush"></i> Color Options</h5>
+<p>Black, Brown, Tan, Orange, White, Purple, Navy, Blue, Ash</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-ruler-combined"></i> Available Sizes</h5>
+<p>
+Small (S): 34-36 inches<br>
+Medium (M): 38-40 inches<br>
+Large (L): 42-44 inches<br>
+Extra Large (XL): 46-48 inches<br>
+Double Extra Large (XXL): 50-52 inches
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-couch"></i> Material</h5>
+<p>
+Outer layer: 100% genuine lambskin leather<br>
+Lining: 100% polyester<br>
+Features lightweight quilted padding
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-tools"></i> Care Instructions</h5>
+<p>
+To maintain leather quality, dry clean only.<br>
+Do not iron to preserve texture.<br>
+Avoid bleaching to prevent damage.
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-flag"></i> Country of Origin</h5>
+<p>This item is crafted in Italy.</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-shield-alt"></i> Warranty</h5>
+<p>1-year warranty covering manufacturing defects.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion accordion-custom d-lg-none" id=detailsAccordion>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingDescription>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseDescription aria-expanded=false aria-controls=collapseDescription>
+Product Description
+</button>
+</h2>
+<div id=collapseDescription class="accordion-collapse collapse" aria-labelledby=headingDescription data-bs-parent=#detailsAccordion>
+<div class=accordion-body-custom>
+<div class=DescriptionContent>
+<p>
+Experience all-day comfort with our premium Polo t-shirt, crafted from luxurious Double PK fabric. This tee combines quality and sustainability with 80% combed, compact organic cotton, offering a softness that feels gentle against your skin. Whether you're heading out for a casual day or dressing up for a more refined look, this Polo t-shirt delivers a blend of sophistication and comfort. The compact cotton ensures lasting durability and minimal pilling, so it retains its shape and feel wash after wash. The breathable, moisture-wicking fabric allows you to stay cool and comfortable, even on the warmest days. Its tailored fit and timeless design make it versatile, suitable for work, casual outings, or weekend wear. Add this eco-conscious, high-quality staple to your wardrobe and enjoy a touch of premium comfort and style every day.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingReviews>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseReviews aria-expanded=false aria-controls=collapseReviews>
+Customer Reviews (5)
+</button>
+</h2>
+<div id=collapseReviews class="accordion-collapse collapse" aria-labelledby=headingReviews data-bs-parent=#detailsAccordion>
+<div class=accordion-body-custom>
+<div class=ReviewsContainer>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile1.avif alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h4>Ayaan Malik<span>12 August, 2024</span></h4>
+<p> Super comfortable and feels luxurious! Wore it all day, and it stayed soft and breathable. Great for everyday wear! </p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile2.png alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star-half-alt"></i>
+</div>
+<h4>Sara Rahman<span>5 September, 2024</span></h4>
+<p>
+This is my new go-to t-shirt. The fabric feels amazing, and I love that it’s organic cotton. Perfect for casual days!
+</p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile3.webp alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<h4>Rizwan Ahmed <span>21 September, 2024</span></h4>
+<p>
+The quality is top-notch! The shirt holds its shape well, even after multiple washes. It’s a great investment.
+</p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/profile2.png alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<h4>Nisha Patel<span>8 October, 2024</span></h4>
+<p>
+Super soft and fits perfectly! I love the eco-friendly material, but I wish there were more color options.
+</p>
+</div>
+</div>
+<div class=ReviewItem>
+<div class=ReviewAvatar>
+<img src=./img/insta.jpg alt="">
+</div>
+<div class=ReviewContent>
+<div class=ReviewStars>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+</div>
+<h4>Arjun Kapoor <span>19 October, 2024</span></h4>
+<p>
+Love this t-shirt! It’s stylish and comfortable for long days. Great quality, and worth every penny.
+</p>
+</div>
+</div>
+<div class=container>
+<div class=row>
+<div class="view text-center">
+<a href=# class=prev-btn><i class="fa-solid fa-arrow-left-long"></i>Prev</a>
+<a href=# class=num>1</a>
+<a href=# class=num>2</a>
+<a href=# class=next-btn>Next<i class="fa-solid fa-arrow-right-long"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingAdditionalInfo>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseAdditionalInfo aria-expanded=false aria-controls=collapseAdditionalInfo>
+Additional Information
+</button>
+</h2>
+<div id=collapseAdditionalInfo class="accordion-collapse collapse" aria-labelledby=headingAdditionalInfo data-bs-parent=#detailsAccordion>
+<div class=accordion-body-custom>
+<div class=AdditionalInfoCards>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-paint-brush"></i> Color Options</h5>
+<p>Black, Brown, Tan, Orange, White, Purple, Navy, Blue, Ash</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-ruler-combined"></i> Available Sizes</h5>
+<p>
+Small (S): 34-36 inches<br>
+Medium (M): 38-40 inches<br>
+Large (L): 42-44 inches<br>
+Extra Large (XL): 46-48 inches<br>
+Double Extra Large (XXL): 50-52 inches
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-couch"></i> Material</h5>
+<p>
+Outer layer: 100% genuine lambskin leather<br>
+Lining: 100% polyester<br>
+Features lightweight quilted padding
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-tools"></i> Care Instructions</h5>
+<p>
+To maintain leather quality, dry clean only.<br>
+Do not iron to preserve texture.<br>
+Avoid bleaching to prevent damage.
+</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-flag"></i> Country of Origin</h5>
+<p>This item is crafted in Italy.</p>
+</div>
+<div class=AdditionalInfoCard>
+<h5><i class="fas fa-shield-alt"></i> Warranty</h5>
+<p>1-year warranty covering manufacturing defects.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=relatedProduct>
+<div class=container>
+<h2 data-aos=flip-left class=Heading>Related Products</h2>
+<div class="productWrapper justify-content-between">
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/jacket.webp alt="">
+<div class=label>
+<span>New</span>
+</div>
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Classic Denim Jacket</h4>
+<p>$129.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/jacket2.webp alt="">
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Retro Varsity Jacket</h4>
+<p>$179.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/jacket.webp alt="">
+<div class=label>
+<span>Hot Sale</span>
+</div>
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Classic Denim Jacket</h4>
+<p>$129.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/jacket2.webp alt="">
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Retro Varsity Jacket</h4>
+<p>$179.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/tshirt.webp alt="">
+<div class=label>
+<span>New</span>
+</div>
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Sport Performance Polo</h4>
+<p>$59.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=productSlider data-aos=zoom-in data-aos-duration=300>
+<div class="productCart p-3">
+<div class=cartItem>
+<img class="img-fluid w-100" src=./img/tshirt2.webp alt="">
+</div>
+<div class=productDetails>
+<div class=row>
+<div class=col-7>
+<h4>Cotton Polo Shirt</h4>
+<p>$39.99</p>
+</div>
+<div class="col-5 text-right">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class=subscription-section-bg>
+<div class="container my-5 p-4 rounded">
+<div class="row align-items-center">
+<div class=col-md-6>
+<h2 class=fw-bold>Subscribe to Our Newsletter!</h2>
+<p class=text-muted>Authoritatively morph 24/7 potentialities with error-free partnerships.<br>Objectively engineer multimedia.</p>
+</div>
+<div class=col-md-6>
+<form class="subscription-form d-flex">
+<input type=email class="form-control me-2" placeholder="Enter your email..." required>
+<button type=submit class="btn btn-primary">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-light pt-5 border-top">
+<div class=container>
+<div class=row>
+<div class="col-md-3 mb-4">
+<img src=./img/Logo.png alt="Aytor Logo" class="footer-logo mb-3 img-fluid">
+<p class=text-muted>Progressively optimize effective ideas before turnkey process improvements.<br>Proactively disseminate.</p>
+<div class="social-icons d-flex">
+<a href=# class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+<a href=# class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+<a href=# class=text-dark><i class="fab fa-pinterest-p"></i></a>
+</div>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">My Account</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>My Account</a></li>
+<li><a href=# class=text-muted>View Cart</a></li>
+<li><a href=# class=text-muted>Wishlist</a></li>
+<li><a href=# class=text-muted>Compare</a></li>
+<li><a href=# class=text-muted>New Products</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Support</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Help</a></li>
+<li><a href=# class=text-muted>Contact Us</a></li>
+<li><a href=# class=text-muted>Feedback</a></li>
+<li><a href=# class=text-muted>Customer Service</a></li>
+<li><a href=# class=text-muted>Store Locations</a></li>
+</ul>
+</div>
+<div class="col-md-2 mb-4 footer-column">
+<h4 class="h5 fw-bold">Shop</h4>
+<ul class=list-unstyled>
+<li><a href=# class=text-muted>Men's Shopping</a></li>
+<li><a href=# class=text-muted>Women's Shopping</a></li>
+<li><a href=# class=text-muted>Kids' Shopping</a></li>
+<li><a href=# class=text-muted>Discounts</a></li>
+<li><a href=# class=text-muted>New Arrivals</a></li>
+</ul>
+</div>
+<div class="col-md-3 mb-4">
+<h4 class="h5 fw-bold">Contact Us</h4>
+<p class="text-muted mb-1"><i class="fas fa-map-marker-alt me-2"></i> 2715 S Parker Rd, Aurora, CO 80014, United States</p>
+<p class="text-muted mb-1"><i class="fas fa-phone me-2"></i> +1 800 866 2268</p>
+<p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> sectorinfo@gmail.com</p>
+<p class=text-muted><i class="fas fa-envelope me-2"></i> info@aytor.com</p>
+</div>
+</div>
+</div>
+</footer>
+<div class="footer-bottom bg-light py-3 border-top">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+<p class="mb-2 mb-md-0 text-muted text-center text-md-start">
+© 2024 All Rights Reserved <span class="highlight fw-bold">Aytor</span> By <span class="highlight fw-bold">Mh Shamim Bhuiyan</span>.
+</p>
+<div class="d-flex justify-content-center justify-content-md-end">
+<img src="./img/25654-2-major-credit-card-logo-transparent-thumb 1.png" alt="Accepted Payment Methods" class="payment-logo img-fluid">
+</div>
+</div>
+</div>
+<script src=./js/jquery-3.7.1.min.js></script>
+<script src=./js/bootstrap.bundle.min.js></script>
+<script src=./js/jquery.countdown.min.js></script>
+<script src=./js/slick.min.js></script>
+<script src=./js/venobox.min.js></script>
+<script src=./js/app.min.js></script>
+</body>
+</html>
